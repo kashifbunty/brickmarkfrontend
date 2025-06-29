@@ -274,7 +274,7 @@ const CompareProperties = () => {
                     </div>
                 );
             }
-        }
+    
         
         // // For simple values (Yes, No, numbers, etc.), return as single tag if they seem like features
         // if (typeof value === 'string' && ['Yes', 'No', 'Available', 'Not Available'].includes(value)) {
