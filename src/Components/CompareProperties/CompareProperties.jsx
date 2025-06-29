@@ -304,7 +304,7 @@ const CompareProperties = () => {
                         <div className="col-md-6">
                             <div className="compare-property-card">
                                 <div className="compare-property-image">
-                                    <img src={sourceProperty?.title_image} alt={sourceProperty.title} className='prop_img'/>
+                                    <img src={sourceProperty?.title_image_url} alt={sourceProperty.title} className='prop_img' />
                                 </div>
                                 <div className="compare-property-details">
                                     <div className="proeprtyTag">
@@ -329,7 +329,7 @@ const CompareProperties = () => {
                         <div className="col-md-6">
                             <div className="compare-property-card">
                                 <div className="compare-property-image">
-                                    <img src={targetProperty?.title_image} alt={targetProperty.title} className='prop_img'/>
+                                    <img src={targetProperty?.title_image_url} alt={targetProperty.title} className='prop_img'/>
                                 </div>
                                 <div className="compare-property-details">
                                     <div className="proeprtyTag">
