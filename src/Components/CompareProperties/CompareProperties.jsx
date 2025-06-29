@@ -467,7 +467,7 @@ const CompareProperties = () => {
                                             const isEven = (baseRowCount + facilityRowCount + index) % 2 === 1;
                                             
  <tbody>
-                                    {Object.keys(placeNamesMap).map((placeName, index) => {
+                                    {placeNamesMap && Object.keys(placeNamesMap).map((placeName, index) => {
                                         const isEven = index % 2 === 0;
                                         return (
                                             <tr key={`place-${placeName}`} className={isEven ? "even-row" : ""}>
@@ -479,12 +479,12 @@ const CompareProperties = () => {
                                     })}
                                 </tbody>
                             </table>
-                        </div> {/* .compare-table */}
-                    </div> {/* .compare-container */}
-                </div> {/* .compare-wrapper */}
-            </div> {/* .main-wrapper */}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </Layout>
     );
-};
+}
 
 export default CompareProperties;
