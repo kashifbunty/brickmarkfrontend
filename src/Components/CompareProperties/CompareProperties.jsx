@@ -150,6 +150,25 @@ const CompareProperties = () => {
 
     const sourceProperty = properties.source_property;
     const targetProperty = properties.target_property;
+    <div className="compare-images" style={{ display: 'flex', gap: '20px', marginBottom: '20px' }}>
+  <div>
+    <h4>{sourceProperty.title}</h4>
+    <img
+      src={sourceProperty.title_image_url}
+      alt={sourceProperty.title}
+      style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }}
+    />
+  </div>
+  <div>
+    <h4>{targetProperty.title}</h4>
+    <img
+      src={targetProperty.title_image_url}
+      alt={targetProperty.title}
+      style={{ width: '300px', height: '200px', objectFit: 'cover', borderRadius: '8px' }}
+    />
+  </div>
+</div>
+
 
     // Helper function to get facility value by name
     const getFacilityValue = (property, facilityName, defaultValue = "N/A") => {
