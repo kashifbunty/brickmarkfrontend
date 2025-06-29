@@ -479,10 +479,10 @@ const CompareProperties = () => {
                                     })}
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> {/* .compare-table */}
+                    </div> {/* .compare-container */}
+                </div> {/* .compare-wrapper */}
+            </div> {/* .main-wrapper */}
         </Layout>
     );
 };
