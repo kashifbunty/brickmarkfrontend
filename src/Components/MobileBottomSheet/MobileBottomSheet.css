@@ -1,0 +1,145 @@
+.mobile-bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Overlay with blur effect */
+  .mobile-sheet-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 998;
+  }
+  
+  .mobile-bottom-sheet-content {
+    background: #fff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px 20px;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .app-promotion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-right: 20px;
+  }
+  
+  .app-icon {
+    margin-right: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .default-app-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+  }
+  
+  .app-info h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .app-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .sheet-button-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+  }
+  
+  .open-app-button {
+    flex: 1;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .cancel-button {
+    flex: 1;
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .open-app-button:hover {
+    opacity: 0.9;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* Hide the bottom sheet on non-mobile devices */
+  @media (min-width: 769px) {
+    .mobile-bottom-sheet,
+    .mobile-sheet-overlay {
+      display: none;
+    }
+  }
+  
+  /* Animation for sheet entrance */
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .mobile-bottom-sheet {
+    animation: slideUp 0.3s ease-out;
+  }
+  

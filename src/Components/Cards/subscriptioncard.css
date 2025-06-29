@@ -1,0 +1,156 @@
+/* Base Card Styling */
+.userPackages.card {
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: none;
+    color: white;
+    transition: transform 0.2s;
+}
+
+/* Active Package Styling */
+.userPackages.active-package {
+    background-color: var(--primary-color);
+    /* Primary color - teal */
+}
+.userPackages.review-package {
+    background-color: #000000;
+}
+
+/* Other Packages Styling */
+.userPackages.other-package {
+    background-color: var(--secondary-color);
+    /* Dark background for other packages */
+}
+
+/* Package Label (Current Package) */
+.package-label {
+    font-size: 14px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+/* Package Name */
+.package-name {
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    background-color: #FFFFFF14;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Package Price */
+.package-price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+/* Package Features Container */
+.package-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+/* Individual Feature Item */
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Feature Icon */
+.feature-icon {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Not Assigned Feature Icon */
+.feature-icon.not-assigned {
+    color: #ff5252;
+    /* Red color for not assigned features */
+}
+
+/* Feature Text */
+.feature-text {
+    font-size: 14px;
+}
+.admin-verification-container {
+    margin-top: auto;
+    padding: 16px 0 0;
+    margin-bottom: 0px !important;
+}
+
+.admin-verification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 0px !important;
+}
+
+.verification-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    margin-bottom: 0px !important;
+}
+
+.info-icon {
+    color: #3498db;
+}
+
+.view-btn {
+    background: transparent;
+    border: none;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.view-btn:hover {
+    background: #f5f5f5;
+}
+
+/* Subscribe Button Container */
+.subscribe-container {
+    margin-top: auto;
+    padding: 16px 0 0;
+}
+
+/* Subscribe Button */
+.subscribe-btn {
+    width: 100%;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.subscribe-btn:hover {
+    background-color: #f5f5f5;
+}
+
+/* Spacer for active packages */
+.card-spacer {
+    margin-top: auto;
+    height: 60px;
+}
