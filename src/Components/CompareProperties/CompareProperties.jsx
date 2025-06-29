@@ -466,15 +466,17 @@ const CompareProperties = () => {
                                         return placeNames.map((placeName, index) => {
                                             const isEven = (baseRowCount + facilityRowCount + index) % 2 === 1;
                                             
-                                            return (
-                                                <tr key={`place-${placeName}`} className={isEven ? "even-row" : ""}>
-                                                    <td>{placeName}</td>
-                                                    <td>{getPlaceDistance(sourceNearbyPlaces, placeName)}</td>
-                                                    <td>{getPlaceDistance(targetNearbyPlaces, placeName)}</td>
-                                                </tr>
-                                            );
-                                        });
-                                    })()}
+                                                                            <tbody>
+                                    {Object.keys(placeNamesMap).map((placeName, index) => {
+                                        const isEven = index % 2 === 0;
+                                        return (
+                                            <tr key={`place-${placeName}`} className={isEven ? "even-row" : ""}>
+                                                <td>{placeName}</td>
+                                                <td>{getPlaceDistance(sourceNearbyPlaces, placeName)}</td>
+                                                <td>{getPlaceDistance(targetNearbyPlaces, placeName)}</td>
+                                            </tr>
+                                        );
+                                    })}
                                 </tbody>
                             </table>
                         </div>
@@ -486,4 +488,3 @@ const CompareProperties = () => {
 };
 
 export default CompareProperties;
-
